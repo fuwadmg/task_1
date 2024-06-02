@@ -18,7 +18,7 @@ step = 0.1
 x = np.arange(x_min, x_max + step, step)
 
 # Расчет значений функции
-f = lambda x: sum([i * np.cos((i + 1) * x + i) for i in range(1, 6)])
+f = lambda x: sum([i * np.cos((i + 1) * x + i) for i in range(1, 6)])*sum([i * np.cos((i + 1) * x + a) for i in range(1, 6)])
 y = f(x)
 
 
